@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#74b823"
+    tools:context=".setting_activity">
+
+    <TextView
+        android:id="@+id/editText6"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:text="Super Locker is a new secure way to protect your privacy."
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:textColor="#000"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="New Password"
+        android:textSize="22dp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/newpassword"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:textColor="#000"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="38dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Confirm Password"
+        android:textSize="22dp"
+        />
+
+    <EditText
+        android:id="@+id/confirmpassword"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:textColor="#000"
+        android:inputType="numberPassword"
+        android:background="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Choose your index(bucket that will change)"
+        android:textColor="#000"
+        android:textSize="22dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/back"
+        android:layout_marginTop="10dp">
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:textColor="#000">
+           <!-- android:backgroundTint="@color/colorAccent"-->
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="1"
+                android:textSize="25dp" />
+            <!--android:backgroundTint="@color/colorPrimary"
+                            android:buttonTint="@color/colorPrimary"-->
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="2"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="3"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="4"
+                android:textSize="25dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/editText4"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Enter number to increment"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/increment"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:background="@drawable/back"
+        android:inputType="numberPassword" />
+
+    <Button
+        android:id="@+id/setpassword"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="Set Password"
+        android:textSize="20dp" />
+
+</LinearLayout>
+
